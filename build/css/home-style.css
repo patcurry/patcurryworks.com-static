@@ -1,0 +1,33 @@
+.heading {
+    background-color: #4286f4; 
+    grid-area: heading;
+}
+
+.item1 {
+    background-color: #f45f41; 
+    grid-area: item1;
+}
+
+.item2 {
+    background-color: #f4f441;
+    grid-area: item2;
+}
+
+.item3 {
+    background-color: #67f441;
+    grid-area: item3;
+}
+
+.home {
+    font-size: 2em;
+    text-align: center;
+
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "heading heading heading"
+        "item1 item2 item3";
+}
+

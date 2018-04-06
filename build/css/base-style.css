@@ -2,18 +2,32 @@
 /* https://www.bitovi.com/blog/using-css-grid-to-build-a-page-layout */
 
 body {
-    /*background: #41c4f4;*/
     background: #fcf7ff;
+    font-family: "Helvetica";
+}
+
+.page {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 30px auto 30px;
+    height: 97vh;
 }
 
 a:link, a:visited  {
+    font-size: 1.4rem;
+
+    height: 1em;
     text-decoration: none;
     color: black;
 }
 
 .link:hover {
-/*    background-color: #e4baff;*/
     background: #41c4f4;
+}
+
+.link:active {
+    color: white;
+    background-color: #e4baff;
 }
 
 .link {
@@ -23,7 +37,17 @@ a:link, a:visited  {
 
 .header {
     display: grid;
+    grid-gap: 2px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    } 
 }
 
 .footer {
