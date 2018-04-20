@@ -1,0 +1,25 @@
+{
+  "name": "patcurryworks.com-static",
+  "version": "0.1.0",
+  "description": "Static files (css, js) for patcurryworks.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patcurry/patcurryworks.com-static.git"
+  },
+  "keywords": [
+    "django",
+    "react",
+    "graphql",
+    "REST"
+  ],
+  "author": "Pat Curry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patcurry/patcurryworks.com-static/issues"
+  },
+  "homepage": "https://github.com/patcurry/patcurryworks.com-static#readme"
+}
