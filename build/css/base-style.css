@@ -1,46 +1,40 @@
+/* patcurryworks.com-static/build/css/base-style.css */
 /* check some links out - this one here has sticky header and footer */
 /* https://www.bitovi.com/blog/using-css-grid-to-build-a-page-layout */
 
-body {
-    background: #fcf7ff;
-    font-family: "Helvetica";
-}
-
 .page {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-rows: 30px auto 30px;
-    height: 97vh;
+    /*background: #41c4f4;*/
+    background: #fcf7ff;
+    font-family: "Gill Sans", sans-serif;
 }
 
 a:link, a:visited  {
-    font-size: 1.4rem;
-
-    height: 1em;
-    text-decoration: none;
     color: black;
 }
 
-.link:hover {
-    background: #41c4f4;
-}
-
-.link:active {
-    color: white;
-    background-color: #e4baff;
-}
-
-.link {
+.header > .link {
     background: #42f4b3;
     text-align: center;
+    flex-grow: 1;
 }
 
+.footer > .link {
+    background: #42f4b3;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.link:hover {
+/*    background-color: #e4baff;*/
+    background-color: #41c4f4;
+}
+
+/* should the header and footer just be flex? */
 .header {
-    display: grid;
-    grid-gap: 2px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-flow: row wrap;
 }
-
+/*
 @media screen and (max-width: 600px) {
     .header {
         display: grid;
@@ -49,7 +43,8 @@ a:link, a:visited  {
         grid-template-rows: 1fr 1fr;
     } 
 }
+*/
 
 .footer {
-    display: grid;
+    display: flex;
 }
