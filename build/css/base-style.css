@@ -1,31 +1,40 @@
+/* patcurryworks.com-static/build/css/base-style.css */
 /* check some links out - this one here has sticky header and footer */
 /* https://www.bitovi.com/blog/using-css-grid-to-build-a-page-layout */
 
-body {
+.page {
     /*background: #41c4f4;*/
     background: #fcf7ff;
+    font-family: "Gill Sans", sans-serif;
 }
 
 a:link, a:visited  {
-    text-decoration: none;
     color: black;
+}
+
+.header > .link {
+    background: #42f4b3;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.footer > .link {
+    background: #42f4b3;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .link:hover {
 /*    background-color: #e4baff;*/
-    background: #41c4f4;
+    background-color: #41c4f4;
 }
 
-.link {
-    background: #42f4b3;
-    text-align: center;
-}
-
+/* should the header and footer just be flex? */
 .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .footer {
-    display: grid;
+    display: flex;
 }
