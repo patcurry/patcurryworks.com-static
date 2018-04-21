@@ -2,7 +2,7 @@
 /* check some links out - this one here has sticky header and footer */
 /* https://www.bitovi.com/blog/using-css-grid-to-build-a-page-layout */
 
-.page {
+.wrapper {
     /*background: #41c4f4;*/
     background: #fcf7ff;
     font-family: "Gill Sans", sans-serif;
