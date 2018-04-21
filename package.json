@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify src/sanity.js -t babelify -o build/js/sanity.js -t",
+    "dev-react": "watchify src/workouts-react.js -t babelify -o build/js/workouts-react.js -t",
     "test": "jest"
   },
   "repository": {
@@ -25,13 +26,21 @@
   "homepage": "https://github.com/patcurry/patcurryworks.com-static#readme",
   "devDependencies": {
     "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.3",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
     "browserify": "^16.2.0",
     "jest": "^22.4.3",
     "regenerator-runtime": "^0.11.1",
     "watchify": "^3.11.0"
+  },
+  "dependencies": {
+    "npm": "^5.8.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2"
   }
 }
