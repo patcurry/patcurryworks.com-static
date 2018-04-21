@@ -2,8 +2,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './workouts/App';
+
 ReactDOM.render(
-    <h1>Workouts App with react, react router and django rest framework.</h1>,
+    <App />,
     document.getElementById('react-root')
 );
 
